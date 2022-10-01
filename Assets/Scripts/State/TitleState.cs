@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using Arbor;
+using Zenject;
 
 [AddComponentMenu("State/TitleState")]
 public class TitleState : StateBehaviour {
+
+	[Inject]
+	private MainCanvas _mainCanvas;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -14,6 +19,7 @@ public class TitleState : StateBehaviour {
 
 	// Use this for enter state
 	public override void OnStateBegin() {
+		Debug.Log(_mainCanvas);
 	}
 
 	// Use this for exit state
