@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2771398755350959834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2771398755350959828}
+  - component: {fileID: 2771398755350959835}
+  - component: {fileID: 2771398755350959829}
+  - component: {fileID: 2771398755350959830}
+  m_Layer: 0
+  m_Name: ArborFSM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2771398755350959828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771398755350959834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2771398755350959835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771398755350959834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3982f3d49853bb44283cd1fcef05a3dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GraphName: MainStateMachine
+  playOnStart: 1
+  updateSettings:
+    type: 0
+    timeType: 0
+    seconds: 0.1
+  debugInfiniteLoopSettings:
+    maxLoopCount: 10000
+    enableLogging: 1
+    enableBreak: 0
+  _OwnerBehaviour: {fileID: 0}
+  _ParameterContainer: {fileID: 0}
+  _Calculators: []
+  _Comments: []
+  _Groups: []
+  _DataBranchRerouteNodes:
+    _Nodes: []
+  _DataBranchies: []
+  _StartStateID: 1559595546
+  _States:
+  - _NodeGraph: {fileID: 2771398755350959835}
+    _NodeID: 1559595546
+    position:
+      serializedVersion: 2
+      x: -444
+      y: -612
+      width: 300
+      height: 94
+    showComment: 0
+    nodeComment: 
+    _Name: EntryState
+    _IsSettedName: 1
+    _Resident: 0
+    _Behaviours:
+    - {fileID: 2771398755350959829}
+    _BreakPoint: 0
+  - _NodeGraph: {fileID: 2771398755350959835}
+    _NodeID: 534011718
+    position:
+      serializedVersion: 2
+      x: -432
+      y: -396
+      width: 300
+      height: 74
+    showComment: 0
+    nodeComment: 
+    _Name: TitleState
+    _IsSettedName: 1
+    _Resident: 0
+    _Behaviours:
+    - {fileID: 2771398755350959830}
+    _BreakPoint: 0
+  _StateLinkRerouteNodes:
+    _Nodes: []
+--- !u!114 &2771398755350959829
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771398755350959834}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f382cf5b152584c5ea1a517b4e8833a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 2771398755350959835}
+  _NodeID: 1559595546
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _next:
+    name: 
+    _StateID: 534011718
+    transitionTiming: 4
+    _LineColorChanged: 0
+    _LineColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &2771398755350959830
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771398755350959834}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fad3b65c25c94f33b5c1b463b74ca12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 2771398755350959835}
+  _NodeID: 534011718
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1

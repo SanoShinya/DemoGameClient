@@ -1,13 +1,8 @@
 ﻿using UnityEngine;
 using Arbor;
 
-[AddComponentMenu("State/EntryState")]
-public class EntryState : StateBehaviour {
-
-
-	[SerializeField]
-	private StateLink _next;
-
+[AddComponentMenu("State/TitleState")]
+public class TitleState : StateBehaviour {
 	// Use this for initialization
 	void Start () {
 	
@@ -19,7 +14,6 @@ public class EntryState : StateBehaviour {
 
 	// Use this for enter state
 	public override void OnStateBegin() {
-		Transition(_next);
 	}
 
 	// Use this for exit state
