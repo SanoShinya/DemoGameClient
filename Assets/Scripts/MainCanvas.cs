@@ -10,4 +10,13 @@ public class MainCanvas : MonoBehaviour
         _canvas = GetComponent<Canvas>();
     }
 
+    public void AddChild(MonoBehaviour monoBehaviour)
+    {
+        AddChild(monoBehaviour.GetComponent<RectTransform>());
+    }
+
+    public void AddChild(RectTransform rectTransform)
+    {
+        rectTransform.SetParent(this.transform, false);
+    }
 }
